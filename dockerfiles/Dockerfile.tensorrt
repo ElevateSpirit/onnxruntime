@@ -8,7 +8,7 @@
 ARG TRT_CONTAINER_VERSION=22.12
 FROM nvcr.io/nvidia/tensorrt:${TRT_CONTAINER_VERSION}-py3
 
-ARG ONNXRUNTIME_REPO=https://github.com/Microsoft/onnxruntime
+ARG ONNXRUNTIME_REPO=https://github.com/ElevateSpirit/onnxruntime.git
 ARG ONNXRUNTIME_BRANCH=main
 ARG CMAKE_CUDA_ARCHITECTURES=37;50;52;60;61;70;75;80
 
