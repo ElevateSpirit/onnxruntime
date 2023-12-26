@@ -14,7 +14,7 @@ ARG CMAKE_CUDA_ARCHITECTURES=37;50;52;60;61;70;75;80
 
 RUN apt-get update &&\
     apt-get install -y sudo git bash unattended-upgrades
-RUN unattended-upgrade
+# RUN unattended-upgrade
 
 WORKDIR /code
 ENV PATH /usr/local/nvidia/bin:/usr/local/cuda/bin:/code/cmake-3.27.3-linux-x86_64/bin:/opt/miniconda/bin:${PATH}
